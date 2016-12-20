@@ -1,0 +1,8 @@
+Plug 'mattn/emmet-vim'
+Plug 'garbas/vim-snipmate'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'Valloric/YouCompleteMe'
+" Optional:
+Plug 'honza/vim-snippets'
+
