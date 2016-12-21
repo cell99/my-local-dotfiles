@@ -1,7 +1,7 @@
 # Replace C-b with C-s for the prefix key
 unbind C-b
-set -g prefix C-space
-bind-key -r C-space send-prefix
+set -g prefix C-s
+bind-key -r C-s send-prefix
 
 # Easy reloading of the tmux.conf configuration file
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
@@ -79,3 +79,15 @@ bind-key s display-panes\; command-prompt -p "pane #: "  "swap-pane -t '%%'"
 # "break session" and "kill session" without exiting tmux
 bind-key C-b send-keys 'tat && exit' 'C-m'
 bind-key K run-shell 'tmux switch-client -n \; kill-session -t "$(tmux display-message -p "#S")" || tmux kill-session'
+
+source "/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf"
+run-shell "powerline-daemon -q"
+
+# set-option -g status on
+# set-option -g status-interval 2
+# set-option -g status-justify "left"
+# set-option -g status-left-length 150
+# set-option -g status-right-length 90
+# set-option -g status-left "#(~/.tmux/tmux-powerline/powerline.sh left)"
+# set-option -g status-right "#(~/.tmux/tmux-powerline/powerline.sh right)"
+

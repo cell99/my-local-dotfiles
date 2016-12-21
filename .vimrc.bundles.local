@@ -1,3 +1,5 @@
+Plug 'scrooloose/nerdtree'
+Plug 'ervandew/supertab'
 Plug 'mattn/emmet-vim'
 Plug 'garbas/vim-snipmate'
 Plug 'MarcWeber/vim-addon-mw-utils'
